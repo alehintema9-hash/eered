@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="TEMAGAS — тексты песен, исполнители и релизы. Все тексты тут.">
+  <title>TEMAGAS — Все тексты тут</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#090909;--panel:#121212;--panel2:#181818;--line:#282828;--text:#f4f2eb;--muted:#99978f;--yellow:#f5e600;--yellow2:#d8cb00;--danger:#ff6868;--green:#8ed6a5;--radius:18px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 78% -10%,rgba(245,230,0,.09),transparent 32%),var(--bg);color:var(--text);font-family:Manrope,Arial,sans-serif;min-height:100vh}button,input,textarea,select{font:inherit}button{cursor:pointer}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:5;background:rgba(9,9,9,.9);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}.top{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;color:var(--text);text-decoration:none;font-weight:900;letter-spacing:-1.5px;font-size:25px}.brand-mark{width:37px;height:37px;background:var(--yellow);color:#080808;border-radius:11px;display:grid;place-items:center;font-size:17px;font-weight:1000;letter-spacing:-2px;transform:rotate(-5deg)}.brand em{font-style:normal;color:var(--yellow)}nav{display:flex;align-items:center;gap:8px}nav button,.nav-link{background:transparent;border:0;color:#c7c5bd;text-decoration:none;padding:10px 13px;border-radius:10px;font-weight:700;font-size:13px}nav button:hover,nav button.active{background:#202018;color:var(--yellow)}.owner-open{background:var(--yellow);color:#090909;border:0;border-radius:999px;padding:11px 17px;font-weight:900;font-size:12px}.owner-open:hover,.primary:hover{background:#fff36a}.hero{padding:65px 0 34px;display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--yellow);font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--yellow);border-radius:50%;box-shadow:0 0 15px var(--yellow)}h1{font-size:clamp(45px,7vw,78px);line-height:.98;letter-spacing:-5px;margin:18px 0 16px;font-weight:900}h1 span{color:var(--yellow)}.hero p{color:var(--muted);font-size:15px;line-height:1.7;max-width:530px;margin:0 0 26px}.search{display:flex;gap:10px;max-width:620px}.search input{min-width:0;flex:1;background:#171717;border:1px solid #333;border-radius:13px;padding:16px 18px;color:white;outline:none}.search input:focus,.field input:focus,.field textarea:focus{border-color:var(--yellow)}.search button,.primary{background:var(--yellow);color:#090909;border:0;border-radius:13px;padding:0 22px;font-weight:900}.hero-art{min-height:250px;position:relative;display:grid;place-items:center}.art-ring{width:245px;height:245px;border:1px solid rgba(245,230,0,.22);border-radius:50%;display:grid;place-items:center;box-shadow:0 0 90px rgba(245,230,0,.06),inset 0 0 65px rgba(245,230,0,.03);transform:rotate(-12deg)}.art-inner{width:190px;height:190px;border-radius:50%;background:linear-gradient(145deg,#292817,#10100c 65%);border:1px solid rgba(245,230,0,.35);display:grid;place-items:center;color:var(--yellow);font-size:60px;font-weight:1000;letter-spacing:-8px;box-shadow:0 20px 60px #000}.stamp{position:absolute;right:8%;bottom:24px;background:var(--yellow);color:#080808;padding:9px 14px;transform:rotate(-7deg);font-size:11px;font-weight:1000;letter-spacing:1px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0 45px}.stat{background:linear-gradient(145deg,#171717,#101010);border:1px solid var(--line);border-radius:15px;padding:17px 19px}.stat b{display:block;font-size:25px;letter-spacing:-1px}.stat span{font-size:11px;color:var(--muted);font-weight:700;letter-spacing:.6px;text-transform:uppercase}.section-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin:40px 0 18px}.section-head h2{font-size:25px;letter-spacing:-1px;margin:0}.section-head p{color:var(--muted);font-size:12px;margin:6px 0 0}.filters{display:flex;gap:7px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:#111;color:#bcbab2;border-radius:999px;padding:9px 14px;font-size:11px;font-weight:800}.filter.active{background:var(--yellow);border-color:var(--yellow);color:#090909}.track-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.track{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.2s}.track:hover{transform:translateY(-3px);border-color:#625d00}.cover{height:160px;background:linear-gradient(135deg,#282713,#141414);position:relative;display:grid;place-items:center;overflow:hidden}.cover:before{content:"";position:absolute;width:180px;height:180px;border:1px solid rgba(245,230,0,.28);border-radius:50%;box-shadow:0 0 0 20px rgba(245,230,0,.025),0 0 0 40px rgba(245,230,0,.025)}.cover img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.cover-mark{font-size:34px;font-weight:1000;color:var(--yellow);letter-spacing:-3px}.type{position:absolute;left:12px;top:12px;background:var(--yellow);color:#090909;border-radius:6px;padding:5px 8px;font-size:9px;font-weight:1000;text-transform:uppercase;letter-spacing:.8px}.track-body{padding:15px}.track h3{font-size:16px;margin:0 0 4px;letter-spacing:-.3px}.artist{font-size:12px;color:var(--muted)}.track-foot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:15px}.track-foot small{color:#777;font-size:10px}.links{display:flex;gap:7px;flex-wrap:wrap}.links a{font-size:10px;text-decoration:none;color:var(--yellow);font-weight:900;border:1px solid #4c4800;padding:6px 9px;border-radius:7px}.empty{grid-column:1/-1;border:1px dashed #393939;border-radius:16px;padding:40px 20px;text-align:center;color:var(--muted)}.empty b{display:block;color:var(--text);margin-bottom:7px}.notice{margin:14px 0;background:#18170b;border:1px solid #534c00;color:#e8df8d;padding:13px 16px;border-radius:12px;font-size:12px;line-height:1.55}.notice.error{background:#241313;border-color:#632b2b;color:#ffb6b6}.notice.ok{background:#102015;border-color:#285a38;color:#b8edc7}.admin-panel{display:none;background:#111;border:1px solid #4b4500;border-radius:18px;padding:22px;margin:28px 0 40px}.admin-panel.show{display:block}.admin-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}.admin-head h2{font-size:21px;margin:0}.admin-head small{color:var(--green);font-weight:800}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:#c7c5bd;font-weight:800}.field input,.field textarea{background:#191919;border:1px solid #333;border-radius:10px;padding:12px 13px;color:white;outline:none;width:100%;font-size:13px}.field textarea{min-height:155px;resize:vertical;line-height:1.6}.field input[type=file]{padding:9px}.form-actions{display:flex;gap:10px;margin-top:15px;flex-wrap:wrap}.primary,.secondary{min-height:42px;padding:0 16px;border-radius:10px;font-size:12px}.secondary{background:#242424;color:#eee;border:1px solid #3a3a3a;font-weight:800}.danger{background:#3a1717;color:#ffb4b4;border:1px solid #6b2929}.track-admin-actions{display:flex;gap:6px;margin-top:12px}.track-admin-actions button{background:#252525;color:#eee;border:1px solid #3b3b3b;border-radius:7px;padding:6px 9px;font-size:10px}.track-admin-actions button:last-child{color:#ffadad}.modal{display:none;position:fixed;inset:0;z-index:20;background:rgba(0,0,0,.78);backdrop-filter:blur(8px);padding:20px;place-items:center}.modal.show{display:grid}.modal-card{width:min(440px,100%);background:#151515;border:1px solid #393939;border-radius:18px;padding:24px;box-shadow:0 30px 100px #000}.modal-card h2{margin:0 0 7px;font-size:23px}.modal-card p{margin:0 0 18px;color:var(--muted);font-size:12px;line-height:1.6}.modal-card .field{margin:12px 0}.modal-card .primary{width:100%;margin-top:7px}.close{float:right;background:#262626;border:0;color:#ddd;border-radius:8px;width:30px;height:30px}.footer{border-top:1px solid #222;margin-top:60px;padding:28px 0 36px;color:#777;font-size:11px}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer strong{color:var(--yellow);letter-spacing:1px}.song-modal .modal-card{max-height:90vh;overflow:auto}.song-modal .modal-card h2{font-size:28px}.lyrics{white-space:pre-wrap;background:#101010;border:1px solid #292929;padding:18px;border-radius:12px;font-size:14px;line-height:1.9;color:#e6e3d9;margin-top:16px}.song-modal .cover{height:210px;border-radius:12px;margin:12px 0}
+    @media(max-width:800px){.top{height:auto;min-height:70px;flex-wrap:wrap;padding:12px 0}nav{order:3;width:100%;overflow:auto}nav button{white-space:nowrap}.hero{grid-template-columns:1fr;padding-top:42px}.hero-art{display:none}.track-grid{grid-template-columns:repeat(2,1fr)}.section-head{align-items:start;flex-direction:column}.stats{margin-bottom:30px}}
+    @media(max-width:520px){.wrap{width:min(100% - 26px,1160px)}.brand{font-size:21px}.owner-open{padding:10px 12px}.hero{padding-top:35px}h1{letter-spacing:-3px}.search{flex-direction:column}.search button{min-height:48px}.stats{gap:7px}.stat{padding:13px}.stat b{font-size:20px}.stat span{font-size:9px}.track-grid{grid-template-columns:1fr 1fr;gap:9px}.cover{height:125px}.track-body{padding:11px}.track h3{font-size:13px}.artist{font-size:10px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.section-head h2{font-size:22px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap top">
+    <a class="brand" href="#home" aria-label="TEMAGAS"><span class="brand-mark">T.</span><span>TEMA<em>GAS</em></span></a>
+    <nav aria-label="Основная навигация">
+      <button class="active" data-filter="all">Главная</button>
+      <button data-filter="all">Песни</button>
+      <button data-filter="artists">Исполнители</button>
+      <button data-filter="releases">Релизы</button>
+    </nav>
+    <button class="owner-open" id="ownerOpen">ВХОД ВЛАДЕЛЬЦА ↗</button>
+  </div>
+</header>
+<main class="wrap" id="home">
+  <section class="hero">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Музыка. Слова. Смысл.</div>
+      <h1>ВСЕ ТЕКСТЫ<br><span>ТУТ.</span></h1>
+      <p>TEMAGAS — место, где собраны тексты песен, релизы и ссылки на музыку. Читай, находи любимые треки и открывай новые имена.</p>
+      <div class="search"><input id="searchInput" type="search" placeholder="Найти песню или исполнителя..." autocomplete="off"><button id="searchBtn">НАЙТИ</button></div>
+    </div>
+    <div class="hero-art"><div class="art-ring"><div class="art-inner">T.</div></div><div class="stamp">ALL LYRICS HERE · 2026</div></div>
+  </section>
+  <section class="stats" aria-label="Статистика">
+    <div class="stat"><b id="trackCount">—</b><span>Треков</span></div>
+    <div class="stat"><b id="artistCount">—</b><span>Исполнителей</span></div>
+    <div class="stat"><b id="releaseCount">—</b><span>Релизов</span></div>
+  </section>
+  <div id="connectionNotice" class="notice">Подключение к каталогу…</div>
+  <section id="collection">
+    <div class="section-head">
+      <div><h2 id="collectionTitle">Популярные тексты</h2><p>Открывай треки и читай тексты</p></div>
+      <div class="filters" aria-label="Тип релиза">
+        <button class="filter active" data-kind="all">Все</button>
+        <button class="filter" data-kind="Single">Singles</button>
+        <button class="filter" data-kind="EP">EP</button>
+        <button class="filter" data-kind="Album">Albums</button>
+      </div>
+    </div>
+    <div class="track-grid" id="trackGrid"><div class="empty"><b>Загружаем каталог…</b>Подключаем песни TEMAGAS.</div></div>
+  </section>
+  <section class="admin-panel" id="adminPanel">
+    <div class="admin-head"><div><h2>Панель владельца</h2><small>● Вход выполнен: только владелец может публиковать</small></div><button class="secondary" id="logoutBtn">Выйти</button></div>
+    <form id="trackForm">
+      <input type="hidden" id="editId">
+      <div class="form-grid">
+        <div class="field"><label for="title">Название трека *</label><input id="title" required maxlength="120" placeholder="Например, Ночной город"></div>
+        <div class="field"><label for="artist">Исполнитель *</label><input id="artist" required maxlength="120" value="Temagas"></div>
+        <div class="field"><label for="releaseName">Название релиза</label><input id="releaseName" maxlength="120" placeholder="Название сингла / EP / альбома"></div>
+        <div class="field"><label for="coverFile">Обложка (файл изображения, сжатие автоматически)</label><input id="coverFile" type="file" accept="image/png,image/jpeg,image/webp,image/gif"><small style="color:#888">Для бесплатного тарифа файл будет сжат и сохранён в базе.</small></div>
+        <div class="field"><label for="coverUrl">Или ссылка на обложку</label><input id="coverUrl" type="url" placeholder="https://..."></div>
+        <div class="field"><label for="youtubeUrl">YouTube</label><input id="youtubeUrl" type="url" placeholder="https://youtube.com/..."></div>
+        <div class="field"><label for="spotifyUrl">Spotify</label><input id="spotifyUrl" type="url" placeholder="https://open.spotify.com/..."></div>
+        <div class="field"><label for="otherUrl">Другая ссылка</label><input id="otherUrl" type="url" placeholder="https://..."></div>
+        <div class="field"><label for="otherLabel">Название другой ссылки</label><input id="otherLabel" maxlength="40" placeholder="Например, Bandcamp"></div>
+        <div class="field full"><label for="lyrics">Текст песни *</label><textarea id="lyrics" required placeholder="Вставь сюда свой текст песни…"></textarea></div>
+      </div>
+      <div class="form-actions"><button class="primary" type="submit" id="saveBtn">ОПУБЛИКОВАТЬ ТРЕК</button><button class="secondary" type="button" id="cancelEdit" hidden>Отмена редактирования</button></div>
+      <div id="formNotice" aria-live="polite"></div>
+    </form>
+  </section>
+</main>
+<footer class="footer"><div class="wrap footer-row"><div><strong>TEMAGAS</strong> — Все тексты тут.</div><div>Публикует только владелец · © <span id="year"></span> TEMAGAS</div></div></footer>
+<div class="modal" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+  <div class="modal-card"><button class="close" id="closeLogin" aria-label="Закрыть">✕</button><h2 id="loginTitle">Вход владельца через Google</h2><p>Войди через Google-аккаунт владельца. Только подтверждённый аккаунт alehintema9@gmail.com сможет публиковать, изменять и удалять песни.</p><div class="field"><label>Аккаунт владельца</label><div style="padding:12px 13px;background:#191919;border:1px solid #333;border-radius:10px;color:#f5e600;font-size:13px;font-weight:800">alehintema9@gmail.com</div></div><button class="primary" id="sendMagic">ВОЙТИ ЧЕРЕЗ GOOGLE</button><div id="loginNotice" aria-live="polite"></div></div>
+</div>
+<div class="modal song-modal" id="songModal" role="dialog" aria-modal="true" aria-labelledby="songTitle"><div class="modal-card"><button class="close" id="closeSong" aria-label="Закрыть">✕</button><div id="songContent"></div></div></div>
+<script src="https://www.gstatic.com/firebasejs/13.4.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/13.4.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/13.4.0/firebase-firestore-compat.js"></script>
+<script>
+  // Вставь сюда конфигурацию веб-приложения Firebase из Project settings → Your apps.
+  // Эти client config значения предназначены для веб-приложения. Секретных ключей здесь быть не должно.
+  const firebaseConfig = {
+    apiKey: "PASTE_FIREBASE_API_KEY",
+    authDomain: "PASTE_PROJECT_ID.firebaseapp.com",
+    projectId: "PASTE_PROJECT_ID",
+    appId: "PASTE_FIREBASE_APP_ID"
+  };
+  const OWNER_EMAIL = 'alehintema9@gmail.com';
+  const $ = (id) => document.getElementById(id);
+  const escapeHTML = (value='') => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const safeURL = (value='') => { try { const u = new URL(value); return ['http:','https:'].includes(u.protocol) ? u.href : ''; } catch { return ''; } };
+  const configured = !!(firebaseConfig.apiKey && !firebaseConfig.apiKey.includes('PASTE_') && firebaseConfig.authDomain && !firebaseConfig.authDomain.includes('PASTE_') && firebaseConfig.projectId && !firebaseConfig.projectId.includes('PASTE_') && firebaseConfig.appId && !firebaseConfig.appId.includes('PASTE_'));
+  let app = null, auth = null, db = null, tracks = [], isOwner = false, currentKind = 'all', currentQuery = '', currentNav = 'all', editingCoverData = '';
+  if (configured && window.firebase) {
+    app = firebase.initializeApp(firebaseConfig);
+    auth = firebase.auth();
+    db = firebase.firestore();
+    auth.useDeviceLanguage();
+  }
+
+  function showNotice(id, msg, kind='') { const el=$(id); if(!el)return; el.className = 'notice' + (kind ? ' '+kind : ''); el.textContent = msg; el.style.display='block'; }
+  function hideNotice(id){const el=$(id);if(el)el.style.display='none';}
+  function releaseKey(t){return `${(t.artist||'').trim().toLowerCase()}::${(t.release_name||t.title||'').trim().toLowerCase()}`;}
+  function releaseType(count){if(count<=1)return 'Single';if(count<10)return 'EP';return 'Album';}
+  function groupedTracks(){const groups=new Map();for(const t of tracks){const k=releaseKey(t);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(t);}const types={};for(const [k,arr] of groups)types[k]=releaseType(arr.length);return types;}
+  function updateStats(){const artists=new Set(tracks.map(t=>(t.artist||'').trim().toLowerCase()).filter(Boolean));const releases=new Set(tracks.map(releaseKey));$('trackCount').textContent=tracks.length;$('artistCount').textContent=artists.size;$('releaseCount').textContent=releases.size;}
+  function externalLinks(t){const items=[];const y=safeURL(t.youtube_url);const s=safeURL(t.spotify_url);const o=safeURL(t.other_url);if(y)items.push(['YouTube',y]);if(s)items.push(['Spotify',s]);if(o)items.push([t.other_label||'Ссылка',o]);return items;}
+  function coverSource(t){return t.cover_data || safeURL(t.cover_url) || '';}
+  function render(){updateStats();const types=groupedTracks();let list=tracks.filter(t=>{const hay=[t.title,t.artist,t.release_name,t.lyrics].join(' ').toLowerCase();const q=currentQuery.toLowerCase();const kind=types[releaseKey(t)];return (!q||hay.includes(q))&&(currentKind==='all'||kind===currentKind);});if(currentNav==='artists'){const seen=new Set();list=list.filter(t=>{const a=(t.artist||'').toLowerCase();if(seen.has(a))return false;seen.add(a);return true;});$('collectionTitle').textContent='Исполнители';}else if(currentNav==='releases'){$('collectionTitle').textContent='Релизы';}else{$('collectionTitle').textContent=currentQuery?'Результаты поиска':'Популярные тексты';}
+    const grid=$('trackGrid');if(!list.length){grid.innerHTML=`<div class="empty"><b>${tracks.length?'Ничего не найдено':'Пока нет опубликованных треков'}</b>${tracks.length?'Попробуй изменить запрос или фильтр.':'Каталог появится здесь после того, как владелец добавит первые песни.'}</div>`;return;}
+    grid.innerHTML=list.map(t=>{const type=types[releaseKey(t)];const cover=coverSource(t);const links=externalLinks(t);return `<article class="track"><button class="cover" style="width:100%;border:0;cursor:pointer" data-open="${escapeHTML(t.id)}" aria-label="Открыть ${escapeHTML(t.title)}">${cover?`<img src="${escapeHTML(cover)}" alt="Обложка ${escapeHTML(t.title)}" loading="lazy">`:`<span class="cover-mark">T.</span>`}<span class="type">${type}</span></button><div class="track-body"><h3>${escapeHTML(t.title)}</h3><div class="artist">${escapeHTML(t.artist||'Неизвестный исполнитель')}</div><div class="track-foot"><small>${escapeHTML(t.release_name||type)}</small><div class="links">${links.map(([label,url])=>`<a href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(label)}</a>`).join('')}</div></div>${isOwner?`<div class="track-admin-actions"><button data-edit="${escapeHTML(t.id)}">Редактировать</button><button data-delete="${escapeHTML(t.id)}">Удалить</button></div>`:''}</div></article>`;}).join('');
+  }
+  async function loadTracks(){if(!db){tracks=[];render();showNotice('connectionNotice','Чтобы каталог заработал, создай проект Firebase, включи Google-вход и Firestore, вставь Firebase config в index.html и опубликуй правила из firestore.rules.');return;}try{const snapshot=await db.collection('tracks').orderBy('created_at','desc').get();tracks=snapshot.docs.map(doc=>({id:doc.id,...doc.data()}));render();showNotice('connectionNotice','Общий каталог Firebase подключён. Читать могут все посетители, публиковать и изменять песни может только владелец.','ok');}catch(e){showNotice('connectionNotice','Не удалось загрузить каталог: '+e.message+' Проверь Firestore и правила доступа.','error');}}
+  function refreshOwner(user){const email=user?.email?.toLowerCase()||'';isOwner=!!user && email===OWNER_EMAIL.toLowerCase() && user.emailVerified===true;$('adminPanel').classList.toggle('show',isOwner);$('ownerOpen').textContent=isOwner?'ПАНЕЛЬ ВЛАДЕЛЬЦА ✓':'ВХОД ВЛАДЕЛЬЦА ↗';render();}
+  function openLogin(){if(isOwner){$('adminPanel').scrollIntoView({behavior:'smooth'});return;}$('loginModal').classList.add('show');}
+  function closeModal(id){$(id).classList.remove('show');}
+  $('ownerOpen').addEventListener('click',openLogin);$('closeLogin').addEventListener('click',()=>closeModal('loginModal'));$('closeSong').addEventListener('click',()=>closeModal('songModal'));
+  $('loginModal').addEventListener('click',e=>{if(e.target===$('loginModal'))closeModal('loginModal');});$('songModal').addEventListener('click',e=>{if(e.target===$('songModal'))closeModal('songModal');});
+  $('sendMagic').addEventListener('click',async()=>{if(!auth){showNotice('loginNotice','Сначала добавь настройки Firebase в index.html.','error');return;}const btn=$('sendMagic');btn.disabled=true;btn.textContent='ОТКРЫВАЕМ GOOGLE…';try{const provider=new firebase.auth.GoogleAuthProvider();provider.setCustomParameters({prompt:'select_account',login_hint:OWNER_EMAIL});const result=await auth.signInWithPopup(provider);const email=result.user?.email?.toLowerCase()||'';if(email!==OWNER_EMAIL.toLowerCase()||!result.user.emailVerified){await auth.signOut();throw new Error('Войди именно через подтверждённый Google-аккаунт '+OWNER_EMAIL+'.');}closeModal('loginModal');showNotice('connectionNotice','Вход владельца через Google выполнен. Теперь можно добавлять и редактировать песни.','ok');refreshOwner(result.user);}catch(e){showNotice('loginNotice',e.code==='auth/unauthorized-domain'?'Домен сайта не добавлен в Firebase Authentication → Settings → Authorized domains.':e.message,'error');}finally{btn.disabled=false;btn.textContent='ВОЙТИ ЧЕРЕЗ GOOGLE';}});
+  $('logoutBtn').addEventListener('click',async()=>{if(auth)await auth.signOut();isOwner=false;$('adminPanel').classList.remove('show');$('ownerOpen').textContent='ВХОД ВЛАДЕЛЬЦА ↗';render();});
+  async function compressCover(file){
+    if(!file)return '';
+    if(!file.type.startsWith('image/'))throw new Error('Выбери файл изображения.');
+    if(file.size>12*1024*1024)throw new Error('Исходная картинка должна быть меньше 12 МБ.');
+    let bitmap;
+    try{bitmap=await createImageBitmap(file);}catch{throw new Error('Не удалось открыть изображение. Попробуй JPG или PNG.');}
+    const maxDim=1000, scale=Math.min(1,maxDim/Math.max(bitmap.width,bitmap.height));
+    const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(bitmap.width*scale));canvas.height=Math.max(1,Math.round(bitmap.height*scale));
+    const ctx=canvas.getContext('2d');ctx.fillStyle='#111';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(bitmap,0,0,canvas.width,canvas.height);bitmap.close?.();
+    let quality=.78, blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/jpeg',quality));
+    while(blob && blob.size>280*1024 && quality>.4){quality-=.08;blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/jpeg',quality));}
+    if(!blob||blob.size>300*1024)throw new Error('Не удалось сжать обложку до 300 КБ. Выбери картинку поменьше.');
+    return await new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(String(r.result));r.onerror=()=>reject(new Error('Не удалось прочитать изображение.'));r.readAsDataURL(blob);});
+  }
+  $('trackForm').addEventListener('submit',async e=>{e.preventDefault();if(!db||!isOwner||!auth.currentUser||auth.currentUser.email.toLowerCase()!==OWNER_EMAIL.toLowerCase()){showNotice('formNotice','Только владелец может публиковать треки.','error');return;}const btn=$('saveBtn');btn.disabled=true;btn.textContent='СОХРАНЯЕМ…';try{
+    let coverUrl=safeURL($('coverUrl').value.trim())||'';let coverData=editingCoverData;
+    const file=$('coverFile').files[0];if(file){coverData=await compressCover(file);coverUrl='';}else if(coverUrl){coverData='';}
+    const payload={title:$('title').value.trim(),artist:$('artist').value.trim(),release_name:$('releaseName').value.trim()||$('title').value.trim(),cover_url:coverUrl,cover_data:coverData,youtube_url:safeURL($('youtubeUrl').value.trim())||'',spotify_url:safeURL($('spotifyUrl').value.trim())||'',other_url:safeURL($('otherUrl').value.trim())||'',other_label:$('otherLabel').value.trim()||'',lyrics:$('lyrics').value.trim()};
+    if(!payload.title||!payload.artist||!payload.lyrics)throw new Error('Заполни название, исполнителя и текст.');if(payload.lyrics.length>60000)throw new Error('Текст слишком длинный (максимум 60 000 символов).');
+    const id=$('editId').value;if(id){payload.created_at=tracks.find(t=>t.id===id)?.created_at||firebase.firestore.FieldValue.serverTimestamp();payload.updated_at=firebase.firestore.FieldValue.serverTimestamp();await db.collection('tracks').doc(id).update(payload);}else{payload.created_at=firebase.firestore.FieldValue.serverTimestamp();await db.collection('tracks').add(payload);}
+    showNotice('formNotice',id?'Изменения сохранены.':'Трек опубликован!','ok');$('trackForm').reset();$('artist').value='Temagas';$('editId').value='';editingCoverData='';$('saveBtn').textContent='ОПУБЛИКОВАТЬ ТРЕК';$('cancelEdit').hidden=true;await loadTracks();
+  }catch(err){showNotice('formNotice','Не удалось сохранить: '+err.message,'error');}finally{btn.disabled=false;if(btn.textContent==='СОХРАНЯЕМ…')btn.textContent='ОПУБЛИКОВАТЬ ТРЕК';}});
+  function startEdit(id){const t=tracks.find(x=>x.id===id);if(!t)return;$('editId').value=t.id;$('title').value=t.title||'';$('artist').value=t.artist||'';$('releaseName').value=t.release_name||'';$('coverUrl').value=t.cover_url||'';$('youtubeUrl').value=t.youtube_url||'';$('spotifyUrl').value=t.spotify_url||'';$('otherUrl').value=t.other_url||'';$('otherLabel').value=t.other_label||'';$('lyrics').value=t.lyrics||'';editingCoverData=t.cover_data||'';$('saveBtn').textContent='СОХРАНИТЬ ИЗМЕНЕНИЯ';$('cancelEdit').hidden=false;$('adminPanel').scrollIntoView({behavior:'smooth'});}
+  $('cancelEdit').addEventListener('click',()=>{$('trackForm').reset();$('artist').value='Temagas';$('editId').value='';editingCoverData='';$('saveBtn').textContent='ОПУБЛИКОВАТЬ ТРЕК';$('cancelEdit').hidden=true;hideNotice('formNotice');});
+  async function deleteTrack(id){const t=tracks.find(x=>x.id===id);if(!t||!confirm(`Удалить «${t.title}»?`))return;try{await db.collection('tracks').doc(id).delete();await loadTracks();}catch(e){alert('Не удалось удалить: '+e.message);}}
+  function openSong(id){const t=tracks.find(x=>x.id===id);if(!t)return;const type=groupedTracks()[releaseKey(t)];const cover=coverSource(t);const links=externalLinks(t);$('songContent').innerHTML=`<div class="eyebrow">${type} · TEMAGAS</div><div class="cover">${cover?`<img src="${escapeHTML(cover)}" alt="Обложка">`:'<span class="cover-mark">T.</span>'}</div><h2 id="songTitle">${escapeHTML(t.title)}</h2><div class="artist">${escapeHTML(t.artist||'')}</div><div class="links" style="margin-top:14px">${links.map(([label,url])=>`<a href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer">Открыть ${escapeHTML(label)}</a>`).join('')}</div><div class="lyrics">${escapeHTML(t.lyrics||'Текст пока не добавлен.')}</div>`;$('songModal').classList.add('show');}
+  $('trackGrid').addEventListener('click',e=>{const edit=e.target.closest('[data-edit]');const del=e.target.closest('[data-delete]');const open=e.target.closest('[data-open]');if(edit)startEdit(edit.dataset.edit);else if(del)deleteTrack(del.dataset.delete);else if(open)openSong(open.dataset.open);});
+  $('searchInput').addEventListener('input',e=>{currentQuery=e.target.value.trim();render();});$('searchBtn').addEventListener('click',()=>{currentQuery=$('searchInput').value.trim();render();});
+  document.querySelectorAll('[data-kind]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-kind]').forEach(x=>x.classList.remove('active'));b.classList.add('active');currentKind=b.dataset.kind;render();}));
+  document.querySelectorAll('nav [data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('nav [data-filter]').forEach(x=>x.classList.remove('active'));b.classList.add('active');currentNav=b.dataset.filter;if(currentNav==='artists')currentKind='all';render();$('collection').scrollIntoView({behavior:'smooth'});}));
+  $('year').textContent=new Date().getFullYear();
+  if(auth){auth.onAuthStateChanged(async user=>{refreshOwner(user);await loadTracks();});}else{refreshOwner(null);loadTracks();}
+</script>
+</body>
+</html>
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isOwner() {
+      return request.auth != null
+        && request.auth.token.email == 'alehintema9@gmail.com'
+        && request.auth.token.email_verified == true;
+    }
+
+    function validTrack() {
+      return request.resource.data.keys().hasOnly([
+          'title', 'artist', 'release_name', 'cover_url', 'cover_data',
+          'youtube_url', 'spotify_url', 'other_url', 'other_label',
+          'lyrics', 'created_at', 'updated_at'
+        ])
+        && request.resource.data.keys().hasAll([
+          'title', 'artist', 'release_name', 'cover_url', 'cover_data',
+          'youtube_url', 'spotify_url', 'other_url', 'other_label',
+          'lyrics', 'created_at'
+        ])
+        && request.resource.data.title is string
+        && request.resource.data.title.size() > 0
+        && request.resource.data.title.size() <= 120
+        && request.resource.data.artist is string
+        && request.resource.data.artist.size() > 0
+        && request.resource.data.artist.size() <= 120
+        && request.resource.data.release_name is string
+        && request.resource.data.release_name.size() <= 120
+        && request.resource.data.cover_url is string
+        && request.resource.data.cover_url.size() <= 2048
+        && request.resource.data.cover_data is string
+        && request.resource.data.cover_data.size() <= 400000
+        && request.resource.data.youtube_url is string
+        && request.resource.data.youtube_url.size() <= 2048
+        && request.resource.data.spotify_url is string
+        && request.resource.data.spotify_url.size() <= 2048
+        && request.resource.data.other_url is string
+        && request.resource.data.other_url.size() <= 2048
+        && request.resource.data.other_label is string
+        && request.resource.data.other_label.size() <= 40
+        && request.resource.data.lyrics is string
+        && request.resource.data.lyrics.size() > 0
+        && request.resource.data.lyrics.size() <= 60000
+        && request.resource.data.created_at is timestamp;
+    }
+
+    match /tracks/{trackId} {
+      allow read: if true;
+      allow create: if isOwner()
+        && validTrack()
+        && request.resource.data.created_at == request.time;
+      allow update: if isOwner()
+        && validTrack()
+        && request.resource.data.created_at == resource.data.created_at;
+      allow delete: if isOwner();
+    }
+  }
+}
